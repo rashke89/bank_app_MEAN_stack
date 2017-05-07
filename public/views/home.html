@@ -1,0 +1,24 @@
+<h1>{{name}}</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Card</th>
+      <th>Deposit</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="account in accounts">
+      <td>{{$index+1}}</td>
+      <td>{{account.name}}</td>
+      <td>{{account.card}}</td>
+      <td>{{account.deposit}}</td>
+      <td>
+        <a href="#/edit&del" class="btn btn-primary" ng-click="editAcc($index)">Edit</a>
+        <a onClick="window.location.reload()" href="#/" class="btn btn-warning" ng-click="delAcc($index)">Del</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

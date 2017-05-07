@@ -1,0 +1,10 @@
+<h1>{{a}}</h1>
+<form class="form-group">
+  <label for="text">Name:</label>
+  <input type="text" class="form-control" value="{{e.name}}" ng-model="e.name"><br>
+  <label for="text">Card:</label>
+  <input type="text" class="form-control" value="{{e.card}}" ng-model="e.card"><br>
+  <label for="text">Deposit:</label>
+  <input type="text" class="form-control" value="{{e.deposit}}" ng-model="e.deposit"><br>
+  <a class="btn btn-primary pull-right" ng-click="subEdit(e._id)" href="#/">Submit</a>
+</form>
